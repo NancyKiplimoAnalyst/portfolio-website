@@ -8,14 +8,26 @@
       body {
         font-family: Arial, sans-serif;
         margin: 0;
-        background: #f7f7f7;
+        background: #e9f2f2;
         color: #222;
+      }
+      .Container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 25px 80px;
+        background-color: #dddce3;
       }
       header {
         background: #333;
         color: #fff;
         padding: 16px;
         text-align: center;
+      }
+      .header-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
       }
       .avatar {
         width: 180px;
@@ -25,11 +37,18 @@
         margin-bottom: 10px;
         border: 3px solid #1f2937;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        object-fit: cover;
+        margin: 0 auto 10px;
       }
       nav a {
-        color: #fff;
+        color: #00ffff;
         margin: 0 10px;
-        text-decoration: none;
+        text-decoration: underline;
+      }
+      .about-me {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.5;
       }
       section {
         padding: 20px;
@@ -50,10 +69,57 @@
         border: 1px solid #ddd;
         background: #fff;
         border-radius: 6px;
+        transition: background 0.3s ease, transform 0.2s ease;
       }
-      button:hover {
-        background: #f0f0f0;
+      .button-r {
+        background-color: #3e70ac;
+        color: white;
       }
+      .button-r:hover {
+        background: rgb(159, 184, 91);
+        transform: scale(1.05);
+      }
+      .button-python {
+        background-color: #f0db4f;
+        color: black;
+      }
+      .button-python:hover {
+        background: rgb(51, 137, 74);
+        transform: scale(1.05);
+      }
+      .button-powerbi {
+        background-color: #c26796;
+        color: black;
+      }
+      .button-powerbi:hover {
+        background: yellow;
+        transform: scale(1.05);
+      }
+      .button-web {
+        background-color: #4caf50;
+        color: white;
+      }
+      .button-web:hover {
+        background: rgb(199, 117, 181);
+        transform: scale(1.05);
+      }
+      .button-sql {
+        background-color: #f29111;
+        color: white;
+      }
+      .button-sql:hover {
+        background: orange;
+        transform: scale(1.05);
+      }
+      .button-tableau {
+        background-color: #ac4484;
+        color: white;
+      }
+      .button-tableau:hover {
+        background: orange;
+        transform: scale(1.05);
+      }
+
       .category {
         display: none;
       }
@@ -72,131 +138,174 @@
         padding: 20px;
         color: #666;
       }
+      contact a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      contact a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Nancy Kiplimo - Business/Data/Research Analyst</h1>
-      <nav>
-        <a href="https://github.com/NancyKiplimoAnalyst" target="_blank"
-          >GitHub</a
-        >
-        <a href="https://calendly.com/kiplimonancy888/30min" target="_blank"
-          >Calendly</a
-        >
-        <a
-          href="https://github.com/NancyKiplimoAnalyst/resume-link/blob/main/RESUME-NANCY.pdf"
-          target="_blank"
-          >Resume</a
-        >
-      </nav>
-    </header>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="./nancy.jpg" alt="Nancy Kiplimo" class="avatar" width="2000" />
-      <p>
-        Hello! I’m Nancy, a data analyst skilled in R, Python, Power BI, SQL,
-        and web basics. I enjoy turning data into useful insights.
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="buttons">
-        <button onclick="showCategory('r')">R</button>
-        <button onclick="showCategory('python')">Python</button>
-        <button onclick="showCategory('powerbi')">Power BI</button>
-        <button onclick="showCategory('web')">HTML/CSS/JS</button>
-        <button onclick="showCategory('sql')">SQL</button>
-        <button onclick="showcategory('Tableau')">Tableau</button>"
-      </div>
-
-      <!-- R -->
-      <div id="r" class="category">
-        <div class="project">
-          <h3>Airbnb / Hotel Sentiment Analysis</h3>
-          <p>Project analyzing reviews with R. (Completed)</p>
+    <div class="Container">
+      <header>
+        <div class="header-flex">
+          <img src="./nancy.jpg" alt="Nancy Kiplimo" class="avatar" />
+          <h1>Nancy Kiplimo - Business/Data/Research Analyst</h1>
         </div>
-      </div>
+        <nav>
+          <a href="https://www.linkedin.com/in/nancykiplimo/" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/NancyKiplimoAnalyst" target="_blank"
+            >GitHub</a
+          >
+          <a href="https://calendly.com/kiplimonancy888/30min" target="_blank"
+            >Calendly</a
+          >
+          <a
+            href="https://github.com/NancyKiplimoAnalyst/resume-link/blob/main/RESUME-NANCY.pdf"
+            target="_blank"
+            >Resume</a
+          >
+        </nav>
+      </header>
 
-      <!-- Python -->
-      <div id="python" class="category">
-        <div class="project"><p>Coming soon...</p></div>
-      </div>
+      <section id="about">
+        <h2>About Me</h2>
 
-      <!-- Power BI -->
-      <div id="powerbi" class="category">
-        <div class="project"><p>Coming soon...</p></div>
-      </div>
+        <p class="about-me">
+          Hello! I’m <strong>Nancy Kiplimo</strong>, a passionate
+          <em>Business, Data, and Research Analyst</em> with a strong background
+          in transforming raw data into meaningful insights. I love solving
+          problems, finding patterns, and telling stories with data.
+          <br />
+          I enjoy working with diverse datasets,from business intelligence
+          dashboards to research analytics and turning them into actionable
+          strategies that drive results.
+          <br />
+          Beyond my professional interests, I love <strong>cooking</strong>,
+          <strong>listening to music</strong>, <strong>swimming</strong>,
+          <strong>road trips </strong>
+          and spending quality time relaxing and recharging. These hobbies keep
+          me balanced and inspire creativity in my work.
+        </p>
+      </section>
 
-      <!-- Web -->
-      <div id="web" class="category">
-        <div class="project">
-          <h3>Interactive Weather App</h3>
-          <p>Real-time weather app.</p>
-          <p class="links">
-            <a
-              href="https://nancykiplimoanalyst.github.io/Interactive-Weather-app/"
-              target="_blank"
-              >Live Demo</a
-            >
-            <a
-              href="https://github.com/NancyKiplimoAnalyst/Interactive-Weather-app"
-              target="_blank"
-              >GitHub</a
-            >
-          </p>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="buttons">
+          <button class="button-r" onclick="showCategory('r')">R</button>
+          <button class="button-python" onclick="showCategory('python')">
+            Python
+          </button>
+          <button class="button-powerbi" onclick="showCategory('powerbi')">
+            Power BI
+          </button>
+          <button class="button-web" onclick="showCategory('web')">
+            HTML/CSS/JS
+          </button>
+          <button class="button-sql" onclick="showCategory('sql')">SQL</button>
+          <button class="button-tableau" onclick="showcategory('Tableau')">
+            Tableau
+          </button>
         </div>
-        <div class="project">
-          <h3>Airbnb Booking Website</h3>
-          <p>Built during SheCodes.</p>
-          <p class="links">
-            <a
-              href="https://www.shecodes.io/cohorts/2703/projects/2684292"
-              target="_blank"
-              >Project Page</a
-            >
-          </p>
+
+        <!-- R -->
+        <div id="r" class="category">
+          <div class="project">
+            <h3>Airbnb / Hotel Sentiment Analysis</h3>
+            <p>Project analyzing reviews with R. (Completed)</p>
+          </div>
         </div>
-      </div>
 
-      <!-- SQL -->
-      <div id="sql" class="category">
-        <div class="project"><p>Coming soon...</p></div>
-      </div>
-    </section>
+        <!-- Python -->
+        <div id="python" class="category">
+          <div class="project"><p>Coming soon...</p></div>
+        </div>
 
-    <!-- Tableau -->
-    <div id="tableau" class="category">
-      <div class="project"><p>Coming soon...</p></div>
+        <!-- Power BI -->
+        <div id="powerbi" class="category">
+          <div class="project"><p>Coming soon...</p></div>
+        </div>
+
+        <!-- Web -->
+        <div id="web" class="category">
+          <div class="project">
+            <h3>Interactive Weather App</h3>
+            <p>Real-time weather app.</p>
+            <p class="links">
+              <a
+                href="https://nancykiplimoanalyst.github.io/Interactive-Weather-app/"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/NancyKiplimoAnalyst/Interactive-Weather-app"
+                target="_blank"
+                >GitHub</a
+              >
+            </p>
+          </div>
+          <div class="project">
+            <h3>Airbnb Booking Website</h3>
+            <p>Built during SheCodes.</p>
+            <p class="links">
+              <a
+                href="https://www.shecodes.io/cohorts/2703/projects/2684292"
+                target="_blank"
+                >Project Page</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- SQL -->
+        <div id="sql" class="category">
+          <div class="project"><p>Coming soon...</p></div>
+        </div>
+
+        <!-- Tableau -->
+        <div id="Tableau" class="category">
+          <div class="project"><p>Coming soon...</p></div>
+        </div>
+      </section>
+
+      <section id="dashboards">
+        <h2>Dashboards</h2>
+        <p>Coming soon...</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Book time via
+          <a href="https://calendly.com/kiplimonancy888/30min" target="_blank"
+            >Calendly</a
+          >, view my code on
+          <a href="https://github.com/NancyKiplimoAnalyst" target="_blank"
+            >GitHub</a
+          >
+          or mail me at
+          <a href="mailto:kiplimonancy888@gmail.com"> mail me</a>.
+        </p>
+      </section>
+
+      <footer>© 2025 Nancy Kiplimo • /Business/Data/Research Analyst</footer>
+
+      <script>
+        function showCategory(id) {
+          // hide all categories
+          document.querySelectorAll(".category").forEach(function (div) {
+            div.style.display = "none";
+          });
+          // show selected
+          document.getElementById(id).style.display = "block";
+        }
+        // open Web by default so your two projects are visible
+        showCategory("web");
+      </script>
     </div>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Book time via
-        <a href="https://calendly.com/kiplimonancy888/30min" target="_blank"
-          >Calendly</a
-        >, or view my code on
-        <a href="https://github.com/NancyKiplimoAnalyst" target="_blank"
-          >GitHub</a
-        >.
-      </p>
-    </section>
-
-    <footer>© 2025 Nancy Kiplimo • /Business/Data/Research Analyst</footer>
-
-    <script>
-      function showCategory(id) {
-        // hide all categories
-        document.querySelectorAll(".category").forEach(function (div) {
-          div.style.display = "none";
-        });
-        // show selected
-        document.getElementById(id).style.display = "block";
-      }
-      // open Web by default so your two projects are visible
-      showCategory("web");
-    </script>
   </body>
 </html>
