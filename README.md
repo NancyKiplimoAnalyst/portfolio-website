@@ -23,4 +23,5 @@ The site includes projects in R, Python, SQL, Power BI, Tableau, and Web Develop
 🔗 [LinkedIn](https://www.linkedin.com/in/nancykiplimo/)  
 🔗 [GitHub](https://github.com/NancyKiplimoAnalyst)  
 📅 [Book a call on Calendly](https://calendly.com/kiplimonancy888/30min)
+
 🔗 [Resume](https://github.com/NancyKiplimoAnalyst/resume-link/blob/main/RESUME-NANCY.pdf)
