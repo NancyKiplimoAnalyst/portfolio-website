@@ -121,6 +121,14 @@
         background: orange;
         transform: scale(1.05);
       }
+      .button-excel {
+        background-color: #1d6f42;
+        color: white;
+      }
+      .button-excel:hover {
+        background: #2e8b57;
+        transform: scale(1.05);
+      }
 
       .category {
         display: none;
@@ -214,8 +222,11 @@
             HTML/CSS/JS
           </button>
           <button class="button-sql" onclick="showCategory('sql')">SQL</button>
-          <button class="button-tableau" onclick="showcategory('Tableau')">
+          <button class="button-tableau" onclick="showCategory('Tableau')">
             Tableau
+          </button>
+          <button class="button-excel" onclick="showCategory('excel')">
+            Excel
           </button>
         </div>
 
@@ -334,11 +345,73 @@
         <div id="Tableau" class="category">
           <div class="project"><p>Coming soon...</p></div>
         </div>
+
+        <!-- Excel -->
+        <div id="excel" class="category">
+          <div class="project">
+            <h3>Excel Financial Dashboard</h3>
+            <p>
+              Excel dashboard analyzing a 2015 household expenditure dataset
+              with over 1,900 records. Includes income trends, regional
+              comparisons, and spending patterns.
+            </p>
+            <p>
+              <a
+                href="https://github.com/NancyKiplimoAnalyst/Excel_Financial_Dashboard#readme"
+                target="_blank"
+              >
+                Project Snapshot
+              </a>
+              |
+              <a
+                href="https://github.com/NancyKiplimoAnalyst/Excel_Financial_Dashboard"
+                target="_blank"
+              >
+                GitHub Project
+              </a>
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="dashboards">
         <h2>Dashboards</h2>
-        <p>Coming soon...</p>
+        <div class="project">
+          <h3>Excel Financial Dashboard</h3>
+
+          <img
+            src="./Dashboard.png"
+            alt="Excel Dashboard"
+            style="
+              width: 100%;
+              max-width: 700px;
+              border-radius: 6px;
+              margin: 10px 0;
+            "
+          />
+
+          <p>
+            Built in Microsoft Excel using a 2015 household expenditure dataset
+            with over 1,900 records. The dashboard summarizes income,
+            expenditure, employment category comparisons, and regional trends.
+          </p>
+
+          <p class="links">
+            <a
+              href="https://github.com/NancyKiplimoAnalyst/Excel_Financial_Dashboard#readme"
+              target="_blank"
+            >
+              Project Snapshot
+            </a>
+
+            <a
+              href="https://github.com/NancyKiplimoAnalyst/Excel_Financial_Dashboard"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
       </section>
 
       <section id="contact">
